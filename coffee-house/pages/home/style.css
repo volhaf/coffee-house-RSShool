@@ -100,7 +100,9 @@ color: var(--text-dark);
 /* svg */
 path {
   stroke: var(--text-dark);
+  fill: var(--text-dark);
   transition: stroke 0.8s;
+  transition: fill 0.8s;
 }
 
 
@@ -326,4 +328,71 @@ line-height: 125%;
 .about__images-max:hover {
   transform: scale(1);
   transition: 0.7s ease-in-out;
+}
+
+/* section mobile */
+
+.mobile {
+  margin: 100px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile__images-screens {
+  width: 630px;
+  height: 630px;
+}
+
+.mobile__offer {
+  display: flex;
+  flex-direction: column;
+  gap:40px; 
+}
+
+.mobile__offer-button {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.offer__button {
+  width: 200px;
+  padding: 12px 20px;
+  border: 1px solid var(--border-dark);
+  border-radius: 100px;
+  background-color: transparent;
+
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+
+.offer__button > svg > path {
+  stroke: none;
+  fill: var(--text-dark);
+  transition: fill 0.7s; 
+}
+
+.offer__button-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.offer__button-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; 
+}
+
+.button-text-1 {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: start;
 }
