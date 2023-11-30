@@ -28,22 +28,25 @@
         </div>
         <nav class="header__navigation">
           <ul class="navigation__list">
-            <li class="navigation__link">Favorite coffee</li>
-            <li class="navigation__link">About</li>
-            <li class="navigation__link">Mobile app</li>
-            <li class="navigation__link">Contact us</li>
+            <li class="navigation__link text__headings"><a href="#favorite">Favorite coffee</a></li>
+            <li class="navigation__link text__headings"><a href="#about">About</a></li>
+            <li class="navigation__link text__headings"><a href="#mobile">Mobile app</a></li>
+            <li class="navigation__link text__headings"><a href="#footer__contact">Contact us</a></li>
           </ul>
         </nav>
-        <div class="header__menu">
-          <span class="menu__title">Menu</span>
-          <span class="menu__subtitle">
-            <img
-              src="../../assets/icons/coffee-cup.svg"
-              class="menu__subtitle-img"
-              alt="menu__subtitle-img"
-            />
-          </span>
-        </div>
+        <a class="header__menu-link" href="../menu/#">
+          <div class="header__menu">
+            <span class="menu__title text__headings">Menu</span>
+            <span class="menu__subtitle">
+              <img
+                src="../../assets/icons/coffee-cup.svg"
+                class="menu__subtitle-img"
+                alt="menu__subtitle-img"
+              />
+            </span>
+          </div>
+        </a>
+        
         <div class="header__burger">
           <span class="burger__line"></span>
           <span class="burger__line"></span>
@@ -57,7 +60,7 @@
           <div class="enjoy__hero enjoy__hero-img enjoy__hero-video">
             <div class="hero__conteiner">
               <h1 class="hero__title">
-                Enjoy premium coffee at our charming cafe
+                <span class="title-accent">Enjoy</span> premium coffee at our charming cafe
               </h1>
               <p class="hero__subtitle text">
                 With its inviting atmosphere and delicious coffee options, the
@@ -65,7 +68,8 @@
                 and those seeking a warm and inviting space to enjoy their
                 favorite beverage.
               </p>
-              <button type="button" class="hero__button button">Menu</button>
+              <button type="button" class="hero__button button">
+                <p class="text__headings">Menu</p></button>
             </div>
           </div>
         </section>
