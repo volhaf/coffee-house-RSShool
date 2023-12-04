@@ -531,7 +531,7 @@ line-height: 125%;
 .social__button {
   display: flex;
   flex-direction: row;
-  gap: 12px; 
+  gap: 12px;
 }
 
 .social__button-item {
@@ -544,11 +544,21 @@ line-height: 125%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.social__button-item:hover {
+  background-color: var(--background-body);
+  transition: 0.7s;
 }
 
 .social__button-icon {
   width: 24px;
   height: 24px;
+}
+.social__button-item:hover > svg > path {
+  stroke: var(--background-container);
+  transition: stroke 0.7s;
 }
 
 .footer__contact {
