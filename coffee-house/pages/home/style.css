@@ -528,6 +528,10 @@ line-height: 125%;
   gap: 40px; 
 }
 
+.social__title {
+  color: var(--text-light);
+}
+
 .social__button {
   display: flex;
   flex-direction: row;
