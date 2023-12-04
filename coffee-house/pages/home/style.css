@@ -190,7 +190,6 @@ a, a:visited {
   display: none;
 }
 
-
 /* section enjoy */
 
 .enjoy {
@@ -214,6 +213,32 @@ a, a:visited {
 }
 .hero__subtitle {
   color: var(--text-light);
+}
+
+.hero__button {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.hero__button-text {
+  transform: translateX(14px);
+  transition: 0.3s ease-in;
+}
+
+.hero__button:hover > .hero__button-text {
+  transform: translateX(0);
+  transition: 0.3s ease-in;
+}
+.hero__button-img {
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.hero__button:hover > .hero__button-img {
+  opacity: 100%;
 }
 
 /* section favorite  */
