@@ -6,26 +6,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../home/normalize.css"/>
-    <link rel="stylesheet" href="../menu/style.css"/>
+    <link rel="stylesheet" href="../../css/normalize.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
     <title>Menu</title>
-    <link rel="shortcut icon" type="image/svg" href="../../assets/icons/logo.svg"/>
+    <link rel="shortcut icon" type="image/svg" href="../../assets/icons/coffee-cup.svg"/>
 </head>
 <body>
     <div class="wrapper">
         <header class="header__conteiner">
+          <a class="header__logo-link" href="../home/index.html">
             <div class="header__logo">
               <img
                 src="../../assets/icons/logo.svg"
                 class="header__logo-img"
-                alt="header__logo-img"
-              />
+                alt="header__logo-img"/>
             </div>
+          </a>
             <nav class="header__navigation">
               <ul class="navigation__list">
-                <li class="navigation__item text__headings"><a href="#favorite__anchor" class="navigation__link">Favorite coffee</a></li>
-                <li class="navigation__item text__headings"><a href="#about__anchor" class="navigation__link">About</a></li>
-                <li class="navigation__item text__headings"><a href="#mobile__anchor" class="navigation__link">Mobile app</a></li>
+                <li class="navigation__item text__headings"><a href="../home/index.html#favorite__anchor" class="navigation__link">Favorite coffee</a></li>
+                <li class="navigation__item text__headings"><a href="../home/index.html#about__anchor" class="navigation__link">About</a></li>
+                <li class="navigation__item text__headings"><a href="../home/index.html#mobile__anchor" class="navigation__link">Mobile app</a></li>
                 <li class="navigation__item text__headings"><a href="#contact__anchor" class="navigation__link">Contact us</a></li>
               </ul>
             </nav>
@@ -46,22 +47,33 @@
               <span class="burger__line"></span>
             </div>
           </header>
+<!-- SECTION MENU -->
           <main class="main">
-            <section class="offer">
-              <div class="offer__title-conteiner">
-                <h1 class="offer__title">Behind each of our cups hides an <span class="title-accent">amazing surprise</span></h1>
+            <section class="section__menu">
+              <div class="section__menu-text">
+                <h1 class="section__menu-text title">Behind each of our cups hides an <span class="title-accent">amazing surprise</span></h1>
               </div>
-              <div class="offer__tabs">
-                <button type="button" class="offer__tabs-btn tabs__btn-active">
-                    <span class="tabs__btn-icon">
-                        <span class=""
-                    </span>
-                    <span class="tabs__btn-text">Coffee</span>
+              <div class="section__menu-tabs">
+                <button type="button" class="menu__tabs-btn">
+                  <span class="menu__tabs-btn--icon">
+                    <img src="../../assets/icons/icon-menu-1.svg" alt="icon-menu-1">
+                  </span>
+                  <span class="menu__tabs-btn--text color-accent text__headings ">Coffee</span>
                 </button>
-                <button type="button" class="offer__tabs-btn"></button>
-                <button type="button" class="offer__tabs-btn"></button>
+                <button type="button" class="menu__tabs-btn">
+                  <span class="menu__tabs-btn--icon">
+                    <img src="../../assets/icons/icon-menu-2.svg" alt="icon-menu-2">
+                  </span>
+                  <span class="menu__tabs-btn--text text__headings ">Tea</span>
+                </button>
+                <button type="button" class="menu__tabs-btn">
+                  <span class="menu__tabs-btn--icon">
+                    <img src="../../assets/icons/icon-menu-3.svg" alt="icon-menu-3">
+                  </span>
+                  <span class="menu__tabs-btn--text text__headings ">Dessert</span>
+                </button>
               </div>
-              <div class="offer__menu-grid"></div>
+              <div class="section__menu-grid"></div>
             </section>
           </main>
           <footer class="footer">

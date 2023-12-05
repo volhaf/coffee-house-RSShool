@@ -51,22 +51,6 @@ h1, h2, h3, h4, h5, p {
   margin: 0;
 }
 
-h1 {
-  font-size: 72px;
-  font-weight: 600;
-  line-height: 105%;
-  color: var(--text-light);
-}
-
-h2 {
-  font-family: Inter;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 125%;
-  color: var(--text-dark);
-}
-
 h3 {
   font-family: Inter;
   font-size: 24px;
@@ -101,10 +85,21 @@ a, a:visited {
   font-weight: 400;
   line-height: 150%;
 }
+.title {
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  color: var(--text-dark);
+}
 
 .title-accent {
   color: var(--text-accent);
   font-style: italic;
+}
+.color-accent {
+  color: var(--text-light);
 }
 
 .button {
@@ -211,6 +206,14 @@ a, a:visited {
   justify-content: center;
   align-items: flex-start;
 }
+
+.hero__title {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+  color: var(--text-light);
+}
+
 .hero__subtitle {
   color: var(--text-light);
 }
@@ -614,5 +617,68 @@ line-height: 125%;
 
 .contact__link:hover:before {
   transform: scaleX(1);
+  transition: 0.7s;
+}
+
+
+/* section menu */
+
+.section__menu {
+  margin: 20px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.section__menu-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section__menu-tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+
+}
+
+.menu__tabs-btn {
+  padding: 8px 16px 8px 8px;
+  border-radius: 100px;
+  background: transparent;
+  border: 1px solid var(--border-light);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.menu__tabs-btn--icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--border-light);
+}
+
+.menu__tabs-btn:first-child {
+  background: var(--background-container);
+  pointer-events: none;
+  
+}
+
+.menu__tabs-btn:hover {
+  background: var(--background-container);
+  transition: 0.7s;
+}
+
+.menu__tabs-btn:hover > .menu__tabs-btn--text {
+  color: var(--text-light);
   transition: 0.7s;
 }
