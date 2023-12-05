@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../home/normalize.css" />
-    <link rel="stylesheet" href="../home/style.css" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <title>Home</title>
     <link
       rel="shortcut icon"
@@ -28,13 +28,13 @@
         </div>
         <nav class="header__navigation">
           <ul class="navigation__list">
-            <li class="navigation__link text__headings"><a href="#favorite">Favorite coffee</a></li>
-            <li class="navigation__link text__headings"><a href="#about">About</a></li>
-            <li class="navigation__link text__headings"><a href="#mobile">Mobile app</a></li>
-            <li class="navigation__link text__headings"><a href="#footer__contact">Contact us</a></li>
+            <li class="navigation__item text__headings"><a href="#favorite__anchor" class="navigation__link">Favorite coffee</a></li>
+            <li class="navigation__item text__headings"><a href="#about__anchor" class="navigation__link">About</a></li>
+            <li class="navigation__item text__headings"><a href="#mobile__anchor" class="navigation__link">Mobile app</a></li>
+            <li class="navigation__item text__headings"><a href="#contact__anchor" class="navigation__link">Contact us</a></li>
           </ul>
         </nav>
-        <a class="header__menu-link" href="../menu/#">
+        <a class="header__menu-link" href="../menu/menu.html">
           <div class="header__menu">
             <span class="menu__title text__headings">Menu</span>
             <span class="menu__subtitle">
@@ -68,15 +68,22 @@
                 and those seeking a warm and inviting space to enjoy their
                 favorite beverage.
               </p>
-              <button type="button" class="hero__button button">
-                <p class="text__headings">Menu</p></button>
+              <button type="button" class="hero__button button" onclick="window.location.href='../menu/menu.html';">
+                <p class="text__headings hero__button-text">Menu</p>
+                <svg class="hero__button-img" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M14.166 9.76667V11.6667C14.166 14.8883 11.5543 17.5 8.33268 17.5C5.11102 17.5 2.49935 14.8883 2.49935 11.6667V9.76667C2.49935 9.4353 2.76798 9.16667 3.09935 9.16667H13.566C13.8974 9.16667 14.166 9.4353 14.166 9.76667Z" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9.99935 7.49996C9.99935 6.66663 10.5946 5.83329 11.7851 5.83329V5.83329C13.1 5.83329 14.166 4.7673 14.166 3.45234V2.91663" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.66732 7.5V7.08333C6.66732 5.70262 7.78661 4.58333 9.16732 4.58333V4.58333C10.0878 4.58333 10.834 3.83714 10.834 2.91667V2.5" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.334 9.16663H15.4173C16.5679 9.16663 17.5007 10.0994 17.5007 11.25C17.5007 12.4006 16.5679 13.3333 15.4173 13.3333H14.1673" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
             </div>
           </div>
         </section>
         <!-- END SECTION ENJOY -->
 
         <!-- SECTION FAVORITE -->
-        <section class="favorite">
+        <section class="favorite" id="favorite__anchor" >
           <h2 class="favorite__title title">Choose your <span class="title-accent">favorite</span> coffee</h2>
           <div class="favorite__slider-conteiner">
             <div class="favorite__slider">
@@ -95,7 +102,7 @@
                   <h3 class="favorite__slide-subtitle">S'mores Frappuccino</h3>
                   <p class="favorite__slide-text text">This new drink takes an espresso 
                     and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                  <p class="favorite__slide-price">$5.50</p>
+                  <p class="favorite__slide-price price">$5.50</p>
                 </div>
                 </div>
                 <div class="favorite__slide">
@@ -106,7 +113,7 @@
                   <h3 class="favorite__slide-subtitle">Caramel Macchiato</h3>
                   <p class="favorite__slide-text text">Fragrant and unique classic espresso with 
                     rich caramel-peanut syrup, with cream under whipped thick foam.</p>
-                  <p class="favorite__slide-price">$5.00</p>
+                  <p class="favorite__slide-price price">$5.00</p>
                 </div>
                 </div>
                 <div class="favorite__slide">
@@ -117,7 +124,7 @@
                   <h3 class="favorite__slide-subtitle">Ice coffee</h3>
                   <p class="favorite__slide-text text">A popular summer drink that tones and invigorates. 
                     Prepared from coffee, milk and ice.</p>
-                  <p class="favorite__slide-price">$4.50</p>
+                  <p class="favorite__slide-price price">$4.50</p>
                 </div>
                 </div>
                </div>
@@ -137,7 +144,7 @@
         </section>
          <!-- END SECTION FAVORITE -->
          <!-- SECTION ABOUT -->
-        <section class="about">
+        <section class="about" id="about__anchor">
             <h2 class="about__title title">Resource is 
               <span class="title-accent">the perfect and cozy place</span> 
               where you can enjoy a variety of hot beverages, relax, catch up with friends, 
@@ -165,7 +172,7 @@
         <!-- END SECTION ABOUT -->
 
         <!-- SECTION MOBILE -->
-        <section class="mobile">
+        <section class="mobile" id="mobile__anchor">
           <div class="mobile__offer">
             <h2 class="offer__title title"> 
               <span class="title-accent">Download</span> 
@@ -232,7 +239,7 @@
               </button>
             </div>
           </div>
-          <div class="footer__contact">
+          <div class="footer__contact" id="contact__anchor">
             <h3 class="footer__contact-subtitle">Contact us</h3>
             <ul class="footer__contact-list">
               <li class="footer__contact-item">
@@ -277,6 +284,6 @@
       </footer>
       <!-- END FOOTER -->
     </div>
-    <script src="../home/script.js"></script>
+    <script src="../../js/script.js"></script>
   </body>
 </html>
