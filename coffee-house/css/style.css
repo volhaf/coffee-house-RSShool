@@ -690,6 +690,8 @@ a, a:visited {
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
   cursor: pointer;
 
 }
@@ -723,10 +725,37 @@ a, a:visited {
 .grid__img-1 {
   background: url(../assets/img/coffee-1.jpg) lightgray 50% / cover no-repeat;
 }
+.grid__img-2 {
+  background: url(../assets/img/coffee-2.jpg) lightgray 50% / cover no-repeat;
+}
+.grid__img-3 {
+  background: url(../assets/img/coffee-3.jpg) lightgray 50% / cover no-repeat;
+}
+.grid__img-4 {
+  background: url(../assets/img/coffee-4.jpg) lightgray 50% / cover no-repeat;
+}
+.grid__img-5 {
+  background: url(../assets/img/coffee-5.jpg) lightgray 50% / cover no-repeat;
+}
+.grid__img-6 {
+  background: url(../assets/img/coffee-6.jpg) lightgray 50% / cover no-repeat;
+}
+.grid__img-7 {
+  background: url(../assets/img/coffee-7.jpg) lightgray 50% / cover no-repeat;
+}
+.grid__img-8 {
+  background: url(../assets/img/coffee-8.jpg) lightgray 50% / cover no-repeat;
+}
 
 .grid__item-content {
   padding: 20px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 12px; 
+}
+
+.grid__item-price {
+  margin-top: auto;
 }
