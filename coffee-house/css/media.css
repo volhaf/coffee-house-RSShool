@@ -1,0 +1,39 @@
+/* .enjoy, */
+.favorite,
+.about,
+.mobile,
+.footer {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header__burger {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        justify-content: center;
+        align-items: center; 
+    }
+    .header__menu-link {
+        display: none;
+    }
+    .header__navigation {
+        display: none;
+    }
+
+    .enjoy__hero-img {
+        padding: 100px 60px;
+    }
+    .hero__button-text {
+        transform: inherit;
+        transition: inherit;
+      }
+    .hero__button-img {
+        opacity: initial;
+    }
+}
+
+
+@media (max-width: 380px) {
+    
+}

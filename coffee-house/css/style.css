@@ -186,9 +186,32 @@ a, a:visited {
   width: 20px;
   height: 20px;
 }
+
 .header__burger {
   display: none;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: 1px solid var(--border-dark);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.7s;
+
+  /* display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center; */
 }
+
+.burger__line {
+  width: 16px;
+  height: 2px;
+  background-color: var(--border-dark);
+  transition: 0.7s;
+  display: block;
+}
+
 
 /* section enjoy */
 
@@ -227,6 +250,7 @@ a, a:visited {
   display: flex;
   gap: 8px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hero__button-text {
