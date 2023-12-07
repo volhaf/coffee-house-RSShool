@@ -1,5 +1,5 @@
 /* .enjoy, */
-.favorite,
+/* .favorite, */
 .about,
 .mobile,
 .footer {
@@ -51,8 +51,29 @@
     }
     .hero__title {
         font-size: 42px;
+        line-height: 115%;
     }
     .hero__subtitle {
         max-width: 316px;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+    }
+    .favorite__slider-wrapper {
+        max-width: 348px;
+        height: 532px;
+    }
+    .favorite__slide {
+        width: 348px;
+        
+    }
+    .favorite__slider {
+        height: auto;
+    }
+
+    .slider__button {
+        display: none;
     }
 }
