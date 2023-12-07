@@ -6,18 +6,8 @@
     display: none;
 } */
 
-@media (max-width: 768px) {
-    .header__burger {
-        display: flex;
-        gap: 6px;
-        justify-content: center;
-        align-items: center; 
-    }
-    .header__menu-link,
-    .header__navigation,
-    .about__images-box--2 {
-        display: none;
-    }
+@media (max-width: 1024px) {
+
     .enjoy__hero-img,
     .footer-conteiner {
         padding: 100px 60px;
@@ -43,27 +33,65 @@
 
 }
 
+@media (max-width: 768px)
+{
+    .header__burger {
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+        align-items: center; 
+    }
+    .header__menu-link,
+    .header__navigation,
+    .about__images-box--2 {
+        display: none;
+    }
+}
 
 
+@media (max-width: 760px) {
+    .slider__button {
+        display: none;
+    }
+    .favorite__slider {
+        height: auto;
+        justify-content: center;
+    }
+    .about__images-box--1 {
+        max-width: 570px;
+    }
+    
+    .mobile__offer,
+    .mobile__images,
+    .hero__conteiner {
+        max-width: 450px;
+    }
 
+    .enjoy__hero-img,
+    .footer-conteiner {
+        padding: 60px 20px;;
+      } 
+      .hero__title {
+        font-size: 60px;
+        line-height: 115%;
+    }
 
-@media (max-width: 380px) {
+}
+
+@media (max-width: 600px) {
     .wrapper {
         padding: 20px 16px;
       }
     .enjoy__hero-img,
     .footer-conteiner {
-        padding: 60px 16px;;
-      } 
+          padding: 60px 16px;;
+    } 
     .hero__conteiner,
-    .about__images-box--1,
     .mobile__offer,
     .mobile__images,
-    .favorite__slider-wrapper {
-        max-width: 348px;
-    }
-    .favorite__slide {
-        width: 348px;
+    .favorite__slider-wrapper,
+    .about__images-box--1 {
+        max-width: 380px;
     }
     .hero__title {
         font-size: 42px;
@@ -79,8 +107,8 @@
     .favorite__slider-wrapper {
         height: 532px;
     }
-    .favorite__slider {
-        height: auto;
+    .favorite__slide {
+        width: 348px;
     }
     .slider__button {
         display: none;
@@ -90,14 +118,24 @@
     .social__title {
         text-align: start;
     }
+    .mobile,
+    .footer-conteiner {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero__conteiner,
+    .about__images-box--1,
+    .mobile__offer,
+    .mobile__images,
+    .favorite__slider-wrapper {
+        max-width: 348px;
+    }
     .mobile__offer-button {
         flex-direction: column;
     }
     .offer__button {
         padding: 11px 20px;
-    }
-    .mobile,
-    .footer-conteiner {
-        gap: 40px;
     }
 }
