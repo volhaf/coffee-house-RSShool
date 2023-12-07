@@ -2,26 +2,24 @@
 /* .favorite, */
 /* .about, */
 /* .mobile, */
-.footer {
+/* .footer {
     display: none;
-}
+} */
 
 @media (max-width: 768px) {
     .header__burger {
         display: flex;
-        flex-direction: column;
         gap: 6px;
         justify-content: center;
         align-items: center; 
     }
-    .header__menu-link {
+    .header__menu-link,
+    .header__navigation,
+    .about__images-box--2 {
         display: none;
     }
-    .header__navigation {
-        display: none;
-    }
-
-    .enjoy__hero-img {
+    .enjoy__hero-img,
+    .footer-conteiner {
         padding: 100px 60px;
     }
     .hero__button-text {
@@ -31,48 +29,41 @@
     .hero__button-img {
         opacity: initial;
     }
-
-    .about__images-box--2 {
-        display: none;
-    }
-    .about__images-conteiner {
+    .header__burger,
+    .about__images-conteiner,
+    .mobile, 
+    .footer-conteiner {
         flex-direction: column;
     }
-
-    .about__images-box--1{
-        max-width: 688px;
-    }
-
-    .mobile {
-        flex-direction: column;
-    }
+    .about__images-box--1,
     .mobile__offer,
-    .mobile__images { 
+    .mobile__images {
         max-width: 688px;
     }
-    
-
-
-
-
 
 }
+
+
+
 
 
 @media (max-width: 380px) {
     .wrapper {
         padding: 20px 16px;
       }
-      
-    .enjoy__hero-img {
-        padding: 60px 16px;
-    }
-    .hero__conteiner {
+    .enjoy__hero-img,
+    .footer-conteiner {
+        padding: 60px 16px;;
+      } 
+    .hero__conteiner,
+    .about__images-box--1,
+    .mobile__offer,
+    .mobile__images,
+    .favorite__slider-wrapper {
         max-width: 348px;
-        display: flex;
-        flex-direction: column;
-        gap: 40px; 
-        align-items:flex-start
+    }
+    .favorite__slide {
+        width: 348px;
     }
     .hero__title {
         font-size: 42px;
@@ -81,47 +72,32 @@
     .hero__subtitle {
         max-width: 316px;
     }
-
     .title {
         font-size: 32px;
         text-align: center;
     }
     .favorite__slider-wrapper {
-        max-width: 348px;
         height: 532px;
-    }
-    .favorite__slide {
-        width: 348px;
-        
     }
     .favorite__slider {
         height: auto;
     }
-
     .slider__button {
         display: none;
     }
-
     .about__title,
-    .offer__title {
+    .offer__title,
+    .social__title {
         text-align: start;
-    }
-    .about__images-box--1{
-        max-width: 348px;
-    }
-
-    .mobile__offer,
-    .mobile__images { 
-        max-width: 348px;
     }
     .mobile__offer-button {
         flex-direction: column;
     }
-
     .offer__button {
         padding: 11px 20px;
     }
-    .mobile {
+    .mobile,
+    .footer-conteiner {
         gap: 40px;
     }
 }
