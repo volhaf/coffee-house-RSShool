@@ -1,7 +1,7 @@
 /* .enjoy, */
 /* .favorite, */
 /* .about, */
-.mobile,
+/* .mobile, */
 .footer {
     display: none;
 }
@@ -42,6 +42,20 @@
     .about__images-box--1{
         max-width: 688px;
     }
+
+    .mobile {
+        flex-direction: column;
+    }
+    .mobile__offer,
+    .mobile__images { 
+        max-width: 688px;
+    }
+    
+
+
+
+
+
 }
 
 
@@ -88,10 +102,26 @@
         display: none;
     }
 
-    .about__title {
+    .about__title,
+    .offer__title {
         text-align: start;
     }
     .about__images-box--1{
         max-width: 348px;
+    }
+
+    .mobile__offer,
+    .mobile__images { 
+        max-width: 348px;
+    }
+    .mobile__offer-button {
+        flex-direction: column;
+    }
+
+    .offer__button {
+        padding: 11px 20px;
+    }
+    .mobile {
+        gap: 40px;
     }
 }
