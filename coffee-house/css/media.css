@@ -1,6 +1,6 @@
 /* .enjoy, */
 /* .favorite, */
-.about,
+/* .about, */
 .mobile,
 .footer {
     display: none;
@@ -30,6 +30,17 @@
       }
     .hero__button-img {
         opacity: initial;
+    }
+
+    .about__images-box--2 {
+        display: none;
+    }
+    .about__images-conteiner {
+        flex-direction: column;
+    }
+
+    .about__images-box--1{
+        max-width: 688px;
     }
 }
 
@@ -75,5 +86,12 @@
 
     .slider__button {
         display: none;
+    }
+
+    .about__title {
+        text-align: start;
+    }
+    .about__images-box--1{
+        max-width: 348px;
     }
 }
