@@ -273,6 +273,9 @@ a, a:visited {
   opacity: 100%;
 }
 
+.hero__menu-tabs {
+  display: none;
+}
 /* section favorite  */
 
 .favorite {
