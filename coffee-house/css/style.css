@@ -217,6 +217,18 @@ a, a:visited {
 
 .enjoy {
   margin: 20px 0px 100px 0px;
+  position: relative;
+  width: 100%;
+  max-width: 1360px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.enjoy__hero-video {
+  position: absolute;
+  max-width: 1360px;
+  border-radius: 40px;
+  z-index: 1;
 }
 
 .enjoy__hero-img {
@@ -224,6 +236,7 @@ a, a:visited {
   border-radius: 40px;
   width: 100%;
   padding: 100px;
+  z-index: 0;
 }
 
 .hero__conteiner {
@@ -240,10 +253,12 @@ a, a:visited {
   font-weight: 600;
   line-height: 105%;
   color: var(--text-light);
+  z-index: 2;
 }
 
 .hero__subtitle {
   color: var(--text-light);
+  z-index: 2;
 }
 
 .hero__button {
@@ -251,11 +266,13 @@ a, a:visited {
   gap: 8px;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 
 .hero__button-text {
   transform: translateX(14px);
   transition: 0.3s ease-in;
+  z-index: 2;
 }
 
 .hero__button:hover > .hero__button-text {
@@ -748,7 +765,7 @@ a, a:visited {
 
 .menu__grid-item {
   width: 310px;
-  height: 506px;
+  height: 50px;
   border-radius: 40px;
   border: 1px solid var(--border-light);
 
