@@ -27,35 +27,39 @@
             alt="header__logo-img"
           />
         </div>
-        <nav class="header__navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item text__headings"><a href="#favorite__anchor" class="navigation__link">Favorite coffee</a></li>
-            <li class="navigation__item text__headings"><a href="#about__anchor" class="navigation__link">About</a></li>
-            <li class="navigation__item text__headings"><a href="#mobile__anchor" class="navigation__link">Mobile app</a></li>
-            <li class="navigation__item text__headings"><a href="#contact__anchor" class="navigation__link">Contact us</a></li>
-          </ul>
-        </nav>
-        <a class="header__menu-link" href="../menu/menu.html">
-          <div class="header__menu">
-            <span class="menu__title text__headings">Menu</span>
-            <span class="menu__subtitle">
-              <img
-                src="../../assets/icons/coffee-cup.svg"
-                class="menu__subtitle-img"
-                alt="menu__subtitle-img"
-              />
-            </span>
+        <div class="navigation__wrapper">
+          <nav class="header__navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item text__headings"><a href="#favorite__anchor" class="navigation__link">Favorite coffee</a></li>
+              <li class="navigation__item text__headings"><a href="#about__anchor" class="navigation__link">About</a></li>
+              <li class="navigation__item text__headings"><a href="#mobile__anchor" class="navigation__link">Mobile app</a></li>
+              <li class="navigation__item text__headings"><a href="#contact__anchor" class="navigation__link">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="header__menu-wrapper">
+            <a class="header__menu-link" href="../menu/menu.html">
+              <div class="header__menu">
+                <span class="menu__title text__headings">Menu</span>
+                <span class="menu__subtitle">
+                  <img
+                    src="../../assets/icons/coffee-cup.svg"
+                    class="menu__subtitle-img"
+                    alt="menu__subtitle-img"
+                  />
+                </span>
+              </div>
+            </a>
           </div>
-        </a>
-        
-        <div class="header__burger">
+        </div>
+        <div class="header__burger" id="burger">
           <span class="burger__line"></span>
           <span class="burger__line"></span>
         </div>
       </header>
       <main class="main">
         <section class="enjoy">
-          <div class="enjoy__hero enjoy__hero-img enjoy__hero-video">
+          <video class="enjoy__hero-video" src="../../assets/video/video_hero.mp4" type="video/mp4" autoplay="" loop="" muted="" ></video>
+          <div class="enjoy__hero enjoy__hero-img">
             <div class="hero__conteiner">
               <h1 class="hero__title">
                 <span class="title-accent">Enjoy</span> premium coffee at our charming cafe
