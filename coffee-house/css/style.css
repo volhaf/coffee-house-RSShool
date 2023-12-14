@@ -126,6 +126,12 @@ a, a:visited {
   width: 100%;
   /* margin: 20px 0px; */
 }
+.navigation__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .header__logo {
   width: 100px;
@@ -187,31 +193,15 @@ a, a:visited {
   height: 20px;
 }
 
+
+.header__navigation{
+  margin: 0 auto;
+}
+
+
 .header__burger {
   display: none;
-  width: 44px;
-  height: 44px;
-  background-color: transparent;
-  border: 1px solid var(--border-dark);
-  border-radius: 100px;
-  cursor: pointer;
-  transition: 0.7s;
-
-  /* display: flex;
-  flex-direction: column;
-  gap: 6px;
-  justify-content: center;
-  align-items: center; */
 }
-
-.burger__line {
-  width: 16px;
-  height: 2px;
-  background-color: var(--border-dark);
-  transition: 0.7s;
-  display: block;
-}
-
 
 /* section enjoy */
 
