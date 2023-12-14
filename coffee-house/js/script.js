@@ -1,4 +1,4 @@
-// alert ('привет, буду очень благодарна, если посмотришь мою работу в конце кроссчека. Я в процессе выполнения. Спасибо большое за понимание :) ')
+// alert ('привет, спасибо, что посмотрели мою работу позже. К сожалению успела только видео и частично бургер. Бургер работает, но не согласно ТЗ. Времени нет, поэтому пушу что есть, дико извиняюсь за такую работу, но пока не могу уделить время :) ')
 
 "use strict"
 
@@ -13,14 +13,4 @@ if(iconBurger) {
         navMenu.classList.toggle('_active');
     })
 }
-
-
-
-    // const burger = document.getElementById('burger');
-
-    // burger.addEventListener('click', function() {
-    //     this.classList.toggle('active_menu');
-    //     document.querySelector('.navigation__list').classList.toggle('open');
-    // })
-
 });
