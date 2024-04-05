@@ -6,4 +6,3 @@
 ###### JS
 ###### Deployment [link](https://volhaf.github.io/coffee-house-RSShool/coffee-house/pages/home/) 
 
-123
